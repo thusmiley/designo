@@ -1,0 +1,132 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+@layer base 
+    :root
+        --container-w: 92%
+    @screen sm 
+        :root
+            --container-w: clamp(327px, 90%, 1000px)
+    @screen 2xl
+        :root
+            --container-w: clamp(1000px, 85%, 1110px)
+
+    *
+        box-sizing: border-box
+        margin: 0
+        padding: 0
+    
+    body
+        font-synthesis: none
+        text-rendering: optimizeLegibility
+        scroll-behavior: smooth
+        font-family: 'Jost', sans-serif
+        @apply text-darkGrey 
+
+    img
+        display: block
+        max-width: 100%
+
+    a 
+        text-decoration: none
+        transition: 0.2s ease-in-out
+        cursor: pointer
+
+    li:hover
+        text-decoration: solid underline rgba(255, 255, 255, 0.5) 1px
+
+    .menu-light li:hover
+        text-decoration: solid underline rgba(0, 0, 0, 0.5) 1px
+
+    //headings and paragraph
+    .heading1, .heading2, .heading3, .heading4, .heading5, .heading6, .cta
+        @apply font-medium
+
+    .heading1
+        font-size: 32px
+        line-height: 36px
+
+    .heading2
+        font-size: 28px
+        line-height: 36px
+        letter-spacing: 1.4px
+
+    .heading3
+        font-size: 20px
+        line-height: 26px
+        letter-spacing: 5px
+
+    .paragraph
+        font-size: 15px
+        line-height: 25px
+
+    .description
+        font-size: 16px
+        line-height: 26px
+
+    @screen md
+        .heading1
+            font-size: 48px
+            line-height: 48px
+
+        .heading2
+            font-size: 40px
+            line-height: 48px
+            letter-spacing: 2px
+
+        .paragraph
+            font-size: 16px
+            line-height: 26px
+
+@layer components
+    .cta
+        font-size: 15px
+        letter-spacing: 1px
+        @apply text-darkGrey w-[160px] py-[18px] px-5 rounded-[8px]
+
+    .cta-white
+        @apply bg-white
+
+    .cta-white:hover
+        @apply bg-lightPeach text-white
+
+    .cta-peach
+        @apply bg-peach
+
+@layer utilities
+    .flexCenter 
+        @apply flex justify-center items-center
+
+    .flexBetween 
+        @apply flex justify-between items-center
+
+    .flexAround
+        @apply flex justify-around items-center
+
+    .flexStart 
+        @apply flex justify-start items-center
+
+    .flexEnd 
+        @apply flex justify-end items-center
+
+    .mobile-menu 
+        animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+
+    @keyframes slide-left 
+        0% 
+            -webkit-transform: translateX(100px)
+            transform: translateX(100px)
+        100% 
+            -webkit-transform: translateX(0)
+            transform: translateX(0)
+
+    .home-hero-bg
+        background: #E7816B url('./src/assets/home/desktop/bg-pattern-hero-home.svg') no-repeat center left
+        @screen md
+            background: #E7816B url('./src/assets/home/desktop/bg-pattern-hero-home.svg') no-repeat top 50% right -30%
+    .cta-bg
+        background: url('./src/assets/shared/desktop/bg-pattern-call-to-action.svg') no-repeat center top
+
+    .socials svg path:hover
+        @apply fill-lightPeach
