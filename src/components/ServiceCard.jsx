@@ -2,7 +2,7 @@ import arrow from "../assets/shared/desktop/icon-right-arrow.svg";
 
 const ServiceCard = ({ title, link, imgMobile, imgTablet, imgDesktop }) => {
   return (
-    <div className="py-[90px] flexCenter flex-col rounded-[15px] relative bg-black/60 text-white hover:bg-peach md:py-[53px]">
+    <div className="py-[90px] flexCenter flex-col rounded-[15px] relative bg-black/60 text-white hover:bg-peach md:py-[53px] xl:py-[107px]">
       <picture className="w-full h-full absolute mix-blend-overlay hover:mix-blend-soft-light">
         <source media="(max-width: 680px)" srcSet={imgMobile} />
         <source media="(max-width: 1200px)" srcSet={imgTablet} />
