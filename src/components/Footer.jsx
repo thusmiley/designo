@@ -3,7 +3,7 @@ import logolight from "../assets/shared/desktop/logo-light.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-black pt-[253px] pb-[64px] text-white text-center md:pt-[166px] md:pb-20">
+    <footer className="bg-black pt-[270px] pb-[64px] text-white text-center md:pt-[166px] md:pb-20">
       <div className="w-container mx-auto">
         <div className="md:flex md:flex-row md:items-center md:pb-10 md:border-b-[1px] md:border-white/10">
           <div className="w-full pb-8 border-b-[1px] border-white/10 md:border-none md:pb-0 md:w-[35%]">

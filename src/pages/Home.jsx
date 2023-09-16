@@ -18,8 +18,8 @@ const Home = () => {
   return (
     <section>
       {/* hero */}
-      <div className="home-hero-bg overflow-hidden mt-[96px] md:mt-[155px] md:w-container md:mx-auto md:rounded-[15px] ">
-        <div className="w-container mx-auto text-white text-center pt-20 pb-[467px] flexCenter flex-col relative md:w-full md:pt-[60px] xl:pb-0 xl:pt-[-200px] xl:flex-row xl:pl-[95px] xl:justify-start xl:overflow-hidden">
+      <div className="home-hero-bg relative overflow-hidden mt-[96px] md:mt-0 md:w-container md:mx-auto md:rounded-[15px] ">
+        <div className="w-container mx-auto text-white text-center pt-20 pb-[467px] flexCenter flex-col md:w-full md:pt-[60px] xl:pb-0 xl:pt-[-200px] xl:flex-row xl:pl-[95px] xl:justify-start xl:overflow-hidden">
           <div className="z-[2] max-w-[573px] xl:text-left xl:w-[70%] xl:mt-[-50px]">
             <h1 className="heading1">Award-winning custom designs and digital branding solutions</h1>
             <p className="paragraph mt-[14px] mb-12 md:mb-[58px] md:mt-7 md:max-w-[445px] md:mx-auto xl:ml-0">
@@ -88,10 +88,10 @@ const Home = () => {
       <div className="home-benefits-bg xl:pb-[320px] mb-[121px] md:mb-[67px] xl:mb-[-170px]">
         <div className="w-container mx-auto space-y-20 md:space-y-8 xl:flexBetween xl:space-y-0 xl:space-x-[30px]">
         <div className="flexCenter flex-col text-center md:flex-row md:text-left md:space-x-12 xl:flex-col xl:text-center xl:space-x-0">
-          <div className="w-[35%] xl:w-full">
+          <div className="md:w-[35%] xl:w-full">
             <img src={passionate} alt="passionate" className="object-contain w-[202px] h-[202px] xl:mx-auto" />
           </div>
-          <div className="w-[65%] xl:w-full">
+          <div className="md:w-[65%] xl:w-full">
             <h2 className="heading3 mt-12 mb-8 md:mt-0 md:mb-4 xl:mt-12">PASSIONATE</h2>
             <p className="description">
               Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new
@@ -101,10 +101,10 @@ const Home = () => {
         </div>
 
         <div className="flexCenter flex-col text-center md:flex-row md:text-left md:space-x-12 xl:flex-col xl:text-center xl:space-x-0">
-          <div className="w-[35%] xl:w-full">
+          <div className="md:w-[35%] xl:w-full">
             <img src={resourceful} alt="resourceful" className="object-contain w-[202px] h-[202px] xl:mx-auto" />
           </div>
-          <div className="w-[65%] xl:w-full">
+          <div className="md:w-[65%] xl:w-full">
             <h2 className="heading3 mt-12 mb-8 md:mt-0 md:mb-4 xl:mt-12">RESOURCEFUL</h2>
             <p className="description">
               Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that
@@ -114,10 +114,10 @@ const Home = () => {
         </div>
 
         <div className="flexCenter flex-col text-center md:flex-row md:text-left md:space-x-12 xl:flex-col xl:text-center xl:space-x-0">
-          <div className="w-[35%] xl:w-full">
+          <div className="md:w-[35%] xl:w-full">
             <img src={friendly} alt="friendly" className="object-contain w-[202px] h-[202px] xl:mx-auto" />
           </div>
-          <div className="w-[65%] xl:w-full">
+          <div className="md:w-[65%] xl:w-full">
             <h2 className="heading3 mt-12 mb-8 md:mt-0 md:mb-4 xl:mt-12">FRIENDLY</h2>
             <p className="description">
               We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company

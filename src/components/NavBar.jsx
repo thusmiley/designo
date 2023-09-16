@@ -8,7 +8,7 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <header className="fixed top-0 z-10 bg-white w-full py-[35px] md:py-[64px]">
+    <header className="fixed top-0 z-10 bg-white w-full py-[35px] md:py-[64px] md:static">
       <div className="">
         <div className="w-container mx-auto flex justify-between md:items-center">
           <a href="/">

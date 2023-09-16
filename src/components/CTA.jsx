@@ -2,7 +2,7 @@ import threecircles from "../assets/shared/desktop/bg-pattern-call-to-action.svg
 
 const CTA = () => {
   return (
-    <div className="w-container mx-auto relative bg-peach text-white text-center rounded-[15px] mb-[-190px] pt-[64px] pb-[120px] px-6 md:mb-[-90px] md:py-[57px] md:pb-[110px] xl:text-left xl:py-[60px]">
+    <div className="w-container mx-auto relative bg-peach text-white text-center rounded-[15px] mb-[-200px] pt-[64px] pb-[120px] px-6 md:mb-[-90px] md:py-[57px] md:pb-[110px] xl:text-left xl:py-[60px]">
       <img src={threecircles} alt="pattern" className="absolute top-0 left-0 w-full h-full object-cover mix-blend-overlay" />
       <div className="xl:ml-[70px]">
         <h2 className="heading1 mt-[6px] mb-8 md:text-[40px] md:leading-[40px] md:max-w-[335px] md:mx-auto xl:ml-0">Let’s talk about your project</h2>
