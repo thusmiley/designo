@@ -46,7 +46,7 @@ const Home = () => {
             <img src={webMobile} alt="laptop" className="w-full h-full object-cover rounded-[15px]" />
           </picture>
           <h2 className="heading2">WEB DESIGN</h2>
-          <a href="/web" className="flexCenter mt-3 text-[15px] tracking-[5px] after:content-[url('./src/assets/shared/desktop/icon-right-arrow.svg')] after:ml-4 z-[2] md:mt-6">
+          <a href="/web" className="flexCenter mt-3 text-[15px] tracking-[5px] arrow z-[2] md:mt-6">
             VIEW PROJECTS
           </a>
         </div>
@@ -59,10 +59,7 @@ const Home = () => {
             <img src={appMobile} alt="laptop" className="w-full h-full object-cover rounded-[15px]" />
           </picture>
           <h2 className="heading2">APP DESIGN</h2>
-          <a
-            href="/app-design"
-            className="flexCenter mt-3 text-[15px] tracking-[5px] after:content-[url('./src/assets/shared/desktop/icon-right-arrow.svg')] after:ml-4 z-[2] md:mt-6"
-          >
+          <a href="/app-design" className="flexCenter mt-3 text-[15px] tracking-[5px] arrow z-[2] md:mt-6">
             VIEW PROJECTS
           </a>
         </div>
@@ -75,10 +72,7 @@ const Home = () => {
             <img src={graphicMobile} alt="laptop" className="w-full h-full object-cover rounded-[15px]" />
           </picture>
           <h2 className="heading2">GRAPHIC DESIGN</h2>
-          <a
-            href="/graphic"
-            className="flexCenter mt-3 text-[15px] tracking-[5px] after:content-[url('./src/assets/shared/desktop/icon-right-arrow.svg')] after:ml-4 z-[2] md:mt-6"
-          >
+          <a href="/graphic" className="flexCenter mt-3 text-[15px] tracking-[5px] arrow z-[2] md:mt-6">
             VIEW PROJECTS
           </a>
         </div>
@@ -87,47 +81,46 @@ const Home = () => {
       {/* benefits */}
       <div className="home-benefits-bg xl:pb-[320px] mb-[121px] md:mb-[67px] xl:mb-[-170px]">
         <div className="w-container mx-auto space-y-20 md:space-y-8 xl:flexBetween xl:space-y-0 xl:space-x-[30px]">
-        <div className="flexCenter flex-col text-center md:flex-row md:text-left md:space-x-12 xl:flex-col xl:text-center xl:space-x-0">
-          <div className="md:w-[35%] xl:w-full">
-            <img src={passionate} alt="passionate" className="object-contain w-[202px] h-[202px] xl:mx-auto" />
+          <div className="flexCenter flex-col text-center md:flex-row md:text-left md:space-x-12 xl:flex-col xl:text-center xl:space-x-0">
+            <div className="md:w-[35%] xl:w-full">
+              <img src={passionate} alt="passionate" className="object-contain w-[202px] h-[202px] xl:mx-auto" />
+            </div>
+            <div className="md:w-[65%] xl:w-full">
+              <h2 className="heading3 mt-12 mb-8 md:mt-0 md:mb-4 xl:mt-12">PASSIONATE</h2>
+              <p className="description">
+                Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new
+                solutions.
+              </p>
+            </div>
           </div>
-          <div className="md:w-[65%] xl:w-full">
-            <h2 className="heading3 mt-12 mb-8 md:mt-0 md:mb-4 xl:mt-12">PASSIONATE</h2>
-            <p className="description">
-              Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new
-              solutions.
-            </p>
-          </div>
-        </div>
 
-        <div className="flexCenter flex-col text-center md:flex-row md:text-left md:space-x-12 xl:flex-col xl:text-center xl:space-x-0">
-          <div className="md:w-[35%] xl:w-full">
-            <img src={resourceful} alt="resourceful" className="object-contain w-[202px] h-[202px] xl:mx-auto" />
+          <div className="flexCenter flex-col text-center md:flex-row md:text-left md:space-x-12 xl:flex-col xl:text-center xl:space-x-0">
+            <div className="md:w-[35%] xl:w-full">
+              <img src={resourceful} alt="resourceful" className="object-contain w-[202px] h-[202px] xl:mx-auto" />
+            </div>
+            <div className="md:w-[65%] xl:w-full">
+              <h2 className="heading3 mt-12 mb-8 md:mt-0 md:mb-4 xl:mt-12">RESOURCEFUL</h2>
+              <p className="description">
+                Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that
+                fulfill our clients’ needs.
+              </p>
+            </div>
           </div>
-          <div className="md:w-[65%] xl:w-full">
-            <h2 className="heading3 mt-12 mb-8 md:mt-0 md:mb-4 xl:mt-12">RESOURCEFUL</h2>
-            <p className="description">
-              Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that
-              fulfill our clients’ needs.
-            </p>
-          </div>
-        </div>
 
-        <div className="flexCenter flex-col text-center md:flex-row md:text-left md:space-x-12 xl:flex-col xl:text-center xl:space-x-0">
-          <div className="md:w-[35%] xl:w-full">
-            <img src={friendly} alt="friendly" className="object-contain w-[202px] h-[202px] xl:mx-auto" />
-          </div>
-          <div className="md:w-[65%] xl:w-full">
-            <h2 className="heading3 mt-12 mb-8 md:mt-0 md:mb-4 xl:mt-12">FRIENDLY</h2>
-            <p className="description">
-              We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company
-              can provide.
-            </p>
+          <div className="flexCenter flex-col text-center md:flex-row md:text-left md:space-x-12 xl:flex-col xl:text-center xl:space-x-0">
+            <div className="md:w-[35%] xl:w-full">
+              <img src={friendly} alt="friendly" className="object-contain w-[202px] h-[202px] xl:mx-auto" />
+            </div>
+            <div className="md:w-[65%] xl:w-full">
+              <h2 className="heading3 mt-12 mb-8 md:mt-0 md:mb-4 xl:mt-12">FRIENDLY</h2>
+              <p className="description">
+                We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a
+                company can provide.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-      
 
       {/* CTA  */}
       <CTA />
