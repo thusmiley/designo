@@ -129,31 +129,31 @@
     }
   }
   .home-hero-bg {
-    background: #E7816B url("./src/assets/home/desktop/bg-pattern-hero-home.svg") no-repeat center left;
+    background: #E7816B url("/src/assets/home/desktop/bg-pattern-hero-home.svg") no-repeat center left;
   }
   @screen md {
     .home-hero-bg {
-      background: #E7816B url("./src/assets/home/desktop/bg-pattern-hero-home.svg") no-repeat top 50% right -30%;
+      background: #E7816B url("/src/assets/home/desktop/bg-pattern-hero-home.svg") no-repeat top 50% right -30%;
     }
   }
   @screen xl {
     .home-hero-bg {
-      background: #E7816B url("./src/assets/home/desktop/bg-pattern-hero-home.svg") no-repeat top right;
+      background: #E7816B url("/src/assets/home/desktop/bg-pattern-hero-home.svg") no-repeat top right;
     }
   }
   @screen xl {
     .home-benefits-bg {
-      background: url("./src/assets/shared/desktop/bg-pattern-leaf.svg") no-repeat top 100px right;
+      background: url("/src/assets/shared/desktop/bg-pattern-leaf.svg") no-repeat top 100px right;
     }
   }
   .cta-bg {
-    background: url("./src/assets/shared/desktop/bg-pattern-call-to-action.svg") no-repeat center top;
+    background: url("/src/assets/shared/desktop/bg-pattern-call-to-action.svg") no-repeat center top;
   }
   .socials svg path:hover {
     @apply fill-lightPeach;
   }
   .arrow:after {
-    content: url("./src/assets/shared/desktop/icon-right-arrow.svg");
+    content: url("/src/assets/shared/desktop/icon-right-arrow.svg");
     display: inline-block;
     margin-left: 16px;
   }
