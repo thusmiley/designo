@@ -12,7 +12,6 @@ import graphicDesktop from "../assets/home/desktop/image-graphic-design.jpg";
 import passionate from "../assets/home/desktop/passionate.svg";
 import resourceful from "../assets/home/desktop/resourceful.svg";
 import friendly from "../assets/home/desktop/friendly.svg";
-import CTA from "../components/CTA";
 
 const Home = () => {
   return (
@@ -37,7 +36,7 @@ const Home = () => {
       </div>
 
       {/* services */}
-      <div className="w-container mx-auto space-y-6 my-[120px] cursor-pointer xl:grid xl:grid-rows-2 xl:grid-cols-2 xl:gap-[30px] xl:space-y-0 xl:my-[160px]">
+      <div className="w-container mx-auto space-y-6 my-[120px] xl:grid xl:grid-rows-2 xl:grid-cols-2 xl:gap-[30px] xl:space-y-0 xl:my-[160px]">
         <div className="py-[90px] flexCenter flex-col rounded-[15px] relative bg-black/60 text-white hover:bg-peach md:py-[53px] xl:py-[107px] xl:row-span-2">
           <picture className="w-full h-full absolute mix-blend-overlay hover:mix-blend-soft-light">
             <source media="(max-width: 680px)" srcSet={webMobile} />
@@ -122,8 +121,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* CTA  */}
-      <CTA />
     </section>
   );
 };

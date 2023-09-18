@@ -7,20 +7,20 @@ const Footer = () => {
       <div className="w-container mx-auto">
         <div className="md:flex md:flex-row md:items-center md:pb-10 md:border-b-[1px] md:border-white/10">
           <div className="w-full pb-8 border-b-[1px] border-white/10 md:border-none md:pb-0 md:w-[35%]">
-            <img src={logolight} alt="logo" className="w-[202px] h-[27px] object-contain mx-auto md:ml-0" />
+            <img src={logolight} alt="logo" className="object-contain object-left w-full h-[27px] mx-auto md:ml-0" />
           </div>
 
-            <ul className="pt-8 text-[14px] leading-[14px] tracking-[2px] space-y-8 md:w-[65%] md:flex md:justify-end md:space-y-0 md:space-x-[42px] md:pt-0 md:pr-0">
-              <li>
-                <a href="/about">OUR COMPANY</a>
-              </li>
-              <li>
-                <a href="/locations">LOCATIONS</a>
-              </li>
-              <li>
-                <a href="/contact">CONTACT</a>
-              </li>
-            </ul>
+          <ul className="pt-8 text-[14px] leading-[14px] tracking-[2px] space-y-8 md:w-[65%] md:flex md:justify-end md:space-y-0 md:space-x-[42px] md:pt-0 md:pr-0">
+            <li>
+              <a href="/about">OUR COMPANY</a>
+            </li>
+            <li>
+              <a href="/locations">LOCATIONS</a>
+            </li>
+            <li>
+              <a href="/contact">CONTACT</a>
+            </li>
+          </ul>
         </div>
 
         <div className="mt-10 space-y-10 md:mt-[31px] md:space-y-0 md:flex md:items-end md:justify-between md:text-left">

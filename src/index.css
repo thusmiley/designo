@@ -145,6 +145,9 @@
     .home-benefits-bg {
       background: url("/src/assets/shared/desktop/bg-pattern-leaf.svg") no-repeat top 100px right;
     }
+    .service-projects-bg {
+      background: url("/src/assets/shared/desktop/bg-pattern-leaf.svg") no-repeat top left -40%;
+    }
   }
   .cta-bg {
     background: url("/src/assets/shared/desktop/bg-pattern-call-to-action.svg") no-repeat center top;
@@ -156,5 +159,20 @@
     content: url("/src/assets/shared/desktop/icon-right-arrow.svg");
     display: inline-block;
     margin-left: 16px;
+  }
+  .service-hero-bg {
+    background: #E7816B url("/src/assets/web-design/desktop/bg-pattern-intro-web.svg") no-repeat top right;
+    background-size: 150%;
+  }
+  @screen md {
+    .service-hero-bg {
+      background-size: 100%;
+      background-position: top 50% left 0;
+    }
+  }
+  @screen xl {
+    .service-hero-bg {
+      background-position: top 50% right 0;
+    }
   }
 }/*# sourceMappingURL=index.css.map */
