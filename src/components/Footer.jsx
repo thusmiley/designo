@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="w-container mx-auto">
         <div className="md:flex md:flex-row md:items-center md:pb-10 md:border-b-[1px] md:border-white/10">
           <div className="w-full pb-8 border-b-[1px] border-white/10 md:border-none md:pb-0 md:w-[35%]">
-            <img src={logolight} alt="logo" className="object-contain object-left w-full h-[27px] mx-auto md:ml-0" />
+            <img src={logolight} alt="logo" className="object-contain object-center w-full h-[27px] mx-auto md:ml-0 md:object-left" />
           </div>
 
           <ul className="pt-8 text-[14px] leading-[14px] tracking-[2px] space-y-8 md:w-[65%] md:flex md:justify-end md:space-y-0 md:space-x-[42px] md:pt-0 md:pr-0">
