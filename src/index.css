@@ -44,6 +44,13 @@
     -webkit-text-decoration: solid underline rgba(0, 0, 0, 0.5) 1px;
             text-decoration: solid underline rgba(0, 0, 0, 0.5) 1px;
   }
+  input,
+  textarea,
+  button,
+  select,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
   .heading1, .heading2, .heading3, .heading4, .heading5, .heading6, .cta {
     @apply font-medium;
   }
@@ -102,6 +109,54 @@
   }
   .cta-peach:hover {
     @apply bg-lightPeach;
+  }
+  input, textarea {
+    background: transparent;
+    border-bottom: 1px solid white;
+    padding-bottom: 11px;
+    margin-bottom: 25px;
+    width: 100%;
+    outline: none;
+    -webkit-border-radius: 0;
+    padding-left: 14px;
+    caret: white;
+  }
+  textarea::-moz-placeholder, input::-moz-placeholder {
+    color: white;
+    font-size: 15px;
+    line-height: 26px;
+  }
+  input, textarea, textarea::placeholder, input::placeholder {
+    color: white;
+    font-size: 15px;
+    line-height: 26px;
+  }
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    opacity: 0.5;
+  }
+  input::placeholder, textarea::placeholder {
+    opacity: 0.5;
+  }
+  input:focus, textarea:focus {
+    border-bottom: 3px solid white;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-transition: background-color 5000000s ease-in-out 0s;
+    transition: background-color 5000000s ease-in-out 0s;
+    -webkit-text-fill-color: white;
+    background-clip: content-box !important;
+  }
+  .error {
+    font-style: italic;
+    margin-top: -20px;
+    float: right;
+    color: white;
+    font-size: 12px;
+    line-height: 26px;
+    visibility: hidden;
   }
 }
 @layer utilities {
@@ -204,6 +259,19 @@
   }
   @screen xl {
     .about-world-class-bg {
+      background-position: bottom 0 left 0;
+    }
+  }
+  .contact-hero-bg {
+    background: #E7816B url("/src/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg") top left 50%;
+  }
+  @screen md {
+    .contact-hero-bg {
+      background: #E7816B url("/src/assets/contact/desktop/bg-pattern-hero-desktop.svg") top -50% left 50%;
+    }
+  }
+  @screen xl {
+    .contact-hero-bg {
       background-position: bottom 0 left 0;
     }
   }

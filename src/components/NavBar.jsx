@@ -31,7 +31,7 @@ const NavBar = () => {
             {/* mobile */}
             <div className="md:hidden">
               {/* overlay */}
-              <div className={`${!toggle ? "hidden" : "fixed"} top-[96px] bottom-0 left-0 right-0 bg-black/50`} />
+              <div className={`${!toggle ? "hidden" : "fixed"} top-[96px] bottom-0 left-0 right-0 bg-black/50`} onClick={() => setToggle(!toggle)} />
 
               {/* open/close buttons */}
               <img src={toggle ? close : open} alt="menu" onClick={() => setToggle(!toggle)} className="cursor-pointer" />
