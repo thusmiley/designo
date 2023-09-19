@@ -12,7 +12,7 @@ const NavBar = () => {
       <div className="">
         <div className="w-container mx-auto flex justify-between md:items-center">
           <a href="/">
-            <img src={logoDark} alt="logo" className="object-contain object-center w-full h-[27px]" />
+            <img src={logoDark} alt="logo" className="object-contain object-left w-full h-[27px]" />
           </a>
           <nav>
             {/* desktop and tablet */}
