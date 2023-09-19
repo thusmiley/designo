@@ -17,8 +17,8 @@ Designo website
 
 ### Links
 
-- Git URL: 
-- Live Site URL: 
+- Git URL: https://github.com/thusmiley/designo.git
+- Live Site URL: https://designo-five.vercel.app/
 
 ### Built with
 
